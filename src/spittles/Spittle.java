@@ -49,8 +49,8 @@ public class Spittle {
     }
 
     @Override
-    public boolean equals(Object obj) {
-        return EqualsBuilder.reflectionEquals(this, "that", "id", "time");
+    public boolean equals(Object that) {
+        return EqualsBuilder.reflectionEquals(this, that, "id", "time");
     }
 
     @Override
